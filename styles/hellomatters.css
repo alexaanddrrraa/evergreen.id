@@ -1,0 +1,98 @@
+.did-you-know {
+    max-width: 780px;
+    margin: 32px auto;
+}
+
+/* CONTAINER */
+.dny-container {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* HEADER */
+.dny-header h3 {
+    margin: 0;
+    color: #0f3d23;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* FACT CARD */
+.dny-card {
+    min-height: 96px;
+    border-radius: 12px;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.35));
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.6),
+        0 6px 20px rgba(0,0,0,0.06);
+    transition: transform 400ms cubic-bezier(.2, .9, .2, 1), opacity 300ms;
+}
+
+#dny-fact {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all 350ms ease;
+    color: #09311a;
+    line-height: 1.45;
+}
+
+/* CONTROLS */
+.dny-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+/* BUTTON COLORS */
+#dny-new {
+    background: #0f3d23;
+    color: white;
+    border: none;
+}
+
+#dny-copy,
+#dny-share {
+    border: 1px solid rgba(15, 61, 35, 0.12);
+    color: #0f3d23;
+    background: transparent;
+}
+
+/* INDEX TEXT */
+.dny-index {
+    margin-left: auto;
+    color: #0f3d23;
+    opacity: 0.8;
+}
+
+.tip {
+    color: #0f3d23;
+    opacity: 0.6;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

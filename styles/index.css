@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* QUIZ CARD */
+.quiz-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+.quiz-card:hover {
+    transform: scale(1.03);
+}
+
+/* ANSWER BUTTONS */
+.answer-btn {
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* SCORE DISPLAY */
+.score-display {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1e531f;
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
